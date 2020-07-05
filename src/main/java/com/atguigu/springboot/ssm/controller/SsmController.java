@@ -20,4 +20,8 @@ public class SsmController {
         System.out.println("ssmController");
         return adminMapper.selectByExample(null);
     }
+    @GetMapping("testGit")
+    public String testGit(){
+        return "Hello git";
+    }
 }
